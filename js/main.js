@@ -107,7 +107,7 @@ carMileage.addEventListener("change", () => {
 calcButton.addEventListener("click", () => {
     const prices = data[carBrand.value][carModel.value][carYear.value][carVariant.value][carMileage.value];
     const carInfo = `${carYear.value} ${carBrand.value} ${carVariant.value}`;
-    const carPrice = `<div class="from">${prices[0]} TL <span class="condition">*</span></div><span>to </span><span class="to">${prices[1]} TL</span>`;
+    const carPrice = `<div class="from">${prices[1]} TL <span class="condition">*</span></div><span>to </span><span class="to">${prices[0]} TL</span>`;
 
     info.innerHTML = carInfo.toLowerCase();
     price.innerHTML = carPrice;
