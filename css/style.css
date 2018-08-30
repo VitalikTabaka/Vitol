@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-medium;
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #363a4f;
+    background-color: #eff1f9;
+}
+
+.site-header {
+    background-color: #4b506a;
+    color: white;
+}
+
+.site-header .navigation>a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navigation {
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a>svg {
+    margin-right: 5px;
+}
+
+.site-header .navigation>a:hover,
+.logo a:hover {
+    opacity: 0.8;
+}
+
+.main {
+    height: 665px;
+    background: url('imgs/cars.svg') no-repeat right 0 top 50%;
+}
+
+.main-title {
+    font-size: 44px;
+    font-family: Montserrat-Medium;
+    line-height: 1.18;
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    color: #ff4b52;
+}
+
+.main-form {
+    width: 320px;
+    margin-top: 40px;
+}
+
+.custom-select {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5px;
+    height: 50px;
+    border-radius: 4px;
+    background: #fff url('https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png') no-repeat right .75rem center !important;
+    background-size: 15px 15px !important;
+}
+
+.custom-select.selected {
+    background: #fff url(data:image/png;base64,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) no-repeat right .75rem center !important;
+    background-size: 15px 15px !important;
+    padding-right: 40px;
+}
+
+.custom-select[disabled] {
+    background-color: #fafafa !important;
+    opacity: 0.6;
+}
+
+.calc-button {
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    height: 50px;
+    color: white;
+    border-radius: 4px;
+    background-color: #ff4b52;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+}
+
+.calc-button[disabled] {
+    cursor: default;
+    opacity: 0.6;
+}
+
+.how-it-works {
+    padding: 0 0;
+    background-color: #fff;
+}
+
+.how-it-works>.container {
+    height: 500px;
+    background-image: url('imgs/how-it-works.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.result-page.visible {
+    visibility: visible;
+    margin-top: 40px;
+    width: 900px;
+    height: 490px;
+}
+
+.result-card {
+    padding: 50px;
+    width: 426px;
+    height: 484px;
+    border-radius: 4px;
+    margin-right: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.result-card>.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#car-info {
+    width: 250px;
+}
+
+.about-car {
+    font-family: Montserrat-bold;
+    text-transform: capitalize;
+}
+
+.result-card .title-logo {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #e4e5ea;
+    background-image: url('imgs/tick.svg');
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+
+.price {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: rgba(54, 58, 79, 0.5)
+}
+
+.price>.from {
+    color: #363a4f;
+    font-size: 44px;
+    font-family: Montserrat-medium;
+}
+
+.condition {
+    color: #ff4b52;
+}
+
+.price>.to {
+    color: #363a4f;
+    font-family: Montserrat-medium;
+}
+
+.foot-result {
+    margin-top: 10px;
+    background-image: url('imgs/card_inf.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 190px;
+}
+
+.book-appointment {
+    width: 400px;
+}
+
+.book-appointment .calc-button {
+    display: block;
+    width: 396px;
+    margin: 5px 0 5px 2px;
+}
+
+.book-appointment-title {
+    font-family: Montserrat-Medium;
+    font-size: 44px;
+    line-height: 1.18;
+    margin-top: -5px;
+}
+
+.form-img {
+    width: 100%;
+    height: 322px;
+    background-image: url('imgs/booked.svg');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.how-to.visible {
+    margin: 80px 0 0 0;
+    background-image: url(imgs/how_to.svg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: center;
+    background-color: #fff;
+    height: 470px;
+    width: 100%;
+}
+
+.form-img.checked {
+    background-image: url('imgs/filled_in.svg');
+}
+
+#final-page.visible {
+    width: 885px;
+    height: 480px;
+    margin: 50px auto;
+    background-image: url('imgs/thank_you.svg');
+}
